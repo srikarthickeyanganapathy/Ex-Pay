@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiblce" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="./images/favicons/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="./images/newlogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Ex-Pay</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./favicons.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/report.js" defer></script>
+    <link rel="stylesheet" href="styles/report-table.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav style="background-image: url(https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?w=996&t=st=1721458157~exp=1721458757~hmac=f4f2780046b7e1145160b298372411ce41410ff968db3f5694def004ec042898);" class="navbar">
+            <!-- Navbar content -->
+            <div class="nav-logo flex">
+                <div class="logo flex">
+                    <img style="height:50px; width:50px;" src="./images/newlogo.svg" alt="logo">
+                    <h1>Ex-Pay</h1>
+                </div>
+                <button id="btn_close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="nav-menu flex fl-col">
+            
+                <div class="nav-links flex">
+            
+                    <div class="nav-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 66" width="24" height="24">
+                            <path fill="none" d="M0 0h66v66H0z" />
+                            <path class="icon" d="M60.2,1H5.8C3.3,1,1.2,3.1,1.2,5.6v43.2c0,2.5,2.1,4.6,4.6,4.6h20.9L22.2,63H20c-0.6,0-1,0.4-1,1c0,0.6,0.4,1,1,1h26c0.6,0,1-0.4,1-1c0-0.6-0.4-1-1-1h-2.2l-4.5-9.6h20.9c2.5,0,4.6-2.1,4.6-4.6V5.6C64.8,3.1,62.7,1,60.2,1z M5.8,3h54.4c1.4,0,2.6,1.2,2.6,2.6v38.2H3.2V5.6C3.2,4.2,4.4,3,5.8,3z M41.6,63H24.4l4.5-9.6h8.1L41.6,63z M60.2,51.4H5.8c-1.4,0-2.6-1.2-2.6-2.6v-3.1h59.6v3.1C62.8,50.3,61.6,51.4,60.2,51.4z"/>
+                            <path d="M35.3 47.9h-4.5c-.6 0-1 .4-1 1s.4 1 1 1h4.5c.6 0 1-.4 1-1S35.8 47.9 35.3 47.9zM48.3 23.3c2.8 0 5-2.3 5-5 0-2.8-2.3-5-5-5-2.8 0-5 2.3-5 5C43.3 21 45.5 23.3 48.3 23.3zM48.3 15.2c1.7 0 3 1.4 3 3 0 1.7-1.4 3-3 3-1.7 0-3-1.4-3-3C45.3 16.6 46.6 15.2 48.3 15.2z"/>
+                            <path d="M38.2 21.1l2.3.4-1.4 1.9c-.3.4-.2.9.1 1.3l2.7 2.7c.3.3.9.4 1.3.1l1.9-1.4.4 2.3c.1.5.5.8 1 .8h3.8c.5 0 .9-.4 1-.8l.4-2.3 1.9 1.4c.4.3.9.2 1.3-.1l2.7-2.7c.3-.3.4-.9.1-1.3l-1.4-1.9 2.3-.4c.5-.1.8-.5.8-1v-3.8c0-.5-.4-.9-.8-1L56.2 15l1.4-1.9c.3-.4.2-.9-.1-1.3l-2.7-2.7c-.3-.3-.9-.4-1.3-.1l-1.9 1.4-.4-2.3c-.1-.5-.5-.8-1-.8h-3.8c-.5 0-.9.4-1 .8l-.4 2.3L43.2 9c-.4-.3-.9-.2-1.3.1l-2.7 2.7c-.3.3-.4.9-.1 1.3l1.4 1.9-2.3.4c-.5.1-.8.5-.8 1v3.8C37.3 20.6 37.7 21 38.2 21.1zM39.3 17.2l2.1-.3c.4-.1.7-.3.8-.7.1-.3.2-.6.3-.8.2-.3.1-.7-.1-1l-1.2-1.7 1.5-1.5 1.7 1.2c.3.2.7.2 1 .1.3-.1.5-.2.8-.3.4-.1.6-.4.7-.8l.3-2.1h2.1l.3 2.1c.1.4.3.7.7.8.3.1.6.2.8.3.3.2.7.1 1-.1l1.7-1.2 1.5 1.5-1.2 1.7c-.2.3-.3.7-.1 1 .2.3.3.6.3.8.1.4.4.6.8.7l2.1.3v2.1l-2.1.3c-.4.1-.7.3-.8.7-.1.3-.2.5-.3.8-.2.3-.1.7.1 1l1.2 1.7-1.5 1.5-1.7-1.2c-.3-.2-.7-.2-1-.1-.3.1-.6.3-.8.3-.4.1-.6.4-.7.8l-.3 2.1h-2.1l-.3-2.1c-.1-.4-.3-.7-.7-.8-.3-.1-.5-.2-.8-.3-.3-.2-.7-.1-1 .1l-1.7 1.2-1.5-1.5 1.2-1.7c.2-.3.2-.7.1-1-.1-.3-.2-.5-.3-.8 0 0 0 0 0-.1-.1-.3-.4-.6-.8-.7l-2.1-.3V17.2zM7.7 39.5h4.7c.6 0 1-.4 1-1V8.3c0-.6-.4-1-1-1H7.7c-.6 0-1 .4-1 1v30.3C6.7 39.1 7.2 39.5 7.7 39.5zM8.7 9.3h2.7v28.3H8.7V9.3zM18 39.5h4.7c.6 0 1-.4 1-1V24.4c0-.6-.4-1-1-1H18c-.6 0-1 .4-1 1v14.1C17 39.1 17.5 39.5 18 39.5zM19 25.4h2.7v12.1H19V25.4zM28.4 39.5h4.7c.6 0 1-.4 1-1V18.1c0-.6-.4-1-1-1h-4.7c-.6 0-1 .4-1 1v20.4C27.4 39.1 27.8 39.5 28.4 39.5zM29.4 19.1h2.7v18.4h-2.7V19.1zM53.4 32.8H43.2c-.6 0-1 .4-1 1s.4 1 1 1h10.2c.6 0 1-.4 1-1S54 32.8 53.4 32.8zM53.4 37.5H43.2c-.6 0-1 .4-1 1s.4 1 1 1h10.2c.6 0 1-.4 1-1S54 37.5 53.4 37.5z"/>
+                        </svg>
+                    </div>
+                    
+            
+                    <div class="nav-link">
+                        <a href="index.html">DashBoard</a>
+                    </div>
+                </div>
+            
+                <div class="nav-links flex active">
+            
+                    <div class="nav-link-icon">
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cg%20data-name%3D%221%22%3E%3Cpath%20fill%3D%22%23eee5ff%22%20d%3D%22M16%203a13%2013%200%201%200%2013%2013H16Z%22%2F%3E%3Cpath%20fill%3D%22%23d1c3fc%22%20d%3D%22M28.37%2012A13%2013%200%200%200%2020%203.63V12Z%22%2F%3E%3Cpath%20fill%3D%22%232b3145%22%20d%3D%22M16%2030a14%2014%200%200%201%200-28%201%201%200%200%201%201%201v12h12a1%201%200%200%201%201%201%2014%2014%200%200%201-14%2014ZM15%204a12%2012%200%201%200%2013%2013H16a1%201%200%200%201-1-1Z%22%2F%3E%3Cpath%20fill%3D%22%238b50ff%22%20d%3D%22M28.37%2013H20a1%201%200%200%201-1-1V3.63a1%201%200%200%201%20.41-.8%201%201%200%200%201%20.9-.15%2014.05%2014.05%200%200%201%209%209%201%201%200%200%201-.15.9%201%201%200%200%201-.79.42ZM21%2011h5.91A12.05%2012.05%200%200%200%2021%205.09Z%22%2F%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h32v32H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E" width="24" height="24" alt="icon"/>
+                    </div>
+                    
+                    
+            
+                    <div class="nav-link">
+                        Reports
+                    </div>
+                </div>
+            
+                <div class="nav-links flex">
+            
+                    <div class="nav-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path class="icon"
+                                d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 8H4v8h16v-8zm0-2V5H4v4h16zm-6 6h4v2h-4v-2z" />
+                        </svg>
+                    </div>
+            
+                    <div class="nav-link">
+                        Social
+                    </div>
+                </div>
+            
+                <div class="nav-links flex">
+            
+                    <div class="nav-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 66" width="24" height="24">
+                            <path d="M59.85,52.26a12,12,0,0,0-7.23-10.55l-9.79-3.93L41.14,35V33.38a13.54,13.54,0,0,0,2.6-4.23,21.08,21.08,0,0,0,.85-3.38l.22,0H45a2,2,0,0,0,1.91-1.49H47l1,.11h.14a1.46,1.46,0,0,0,1-.36A1.61,1.61,0,0,0,49.65,23L50,18.82a1.58,1.58,0,0,0-1.39-1.72l-1-.1h-.06a2,2,0,0,0-1.14-1.4l0-.14C47.51,11,46,8.54,44,5.43,41.85,1.88,35.86.3,28.43,1.29a6.73,6.73,0,0,0-4.66,2.25,3.91,3.91,0,0,0-.71,1.53,3.56,3.56,0,0,0-2.13,1.14c-2,2.21-1.92,6.94-1.52,9.49A2,2,0,0,0,18.48,17H18.4l-1,.1A1.59,1.59,0,0,0,16,18.82L16.38,23A1.6,1.6,0,0,0,17,24.08a1.48,1.48,0,0,0,1,.35h.15l1-.1h0a1.91,1.91,0,0,0,.65,1A2,2,0,0,0,21,25.8h.18l.16,0a19.26,19.26,0,0,0,.85,3.37,13.41,13.41,0,0,0,2.6,4.24V35L23,37.83l-9.31,3.76a12.57,12.57,0,0,0-7.54,11L5.7,64a1,1,0,0,0,1,1H59.3a1,1,0,0,0,1-1ZM32.18,40.14c-1.85-1.52-3.84-3.28-4.8-4.28a9.05,9.05,0,0,0,11,.1c-1,1-3,2.72-4.81,4.18Zm3.38,1a48.28,48.28,0,0,0,4.52-4l1,1.57L38.6,44.45A19,19,0,0,0,35.56,41.12ZM45,23.8l-.88-.06h0l.57-6.4.27,0H45l.58,0Zm3-4.75-.28,3.34-.45-.05h-.12L47.43,19h0ZM22.39,7.57A1.68,1.68,0,0,1,23.88,7a1,1,0,0,0,.81-.3A1,1,0,0,0,25,5.92c0-.21-.1-2.13,3.72-2.64,6.55-.88,11.91.38,13.66,3.2s3,4.87,2.11,8.5c0,.13-.05.26-.08.39a2,2,0,0,0-1.16.61,13.89,13.89,0,0,0-1.08-3.15c-1.73-3.22-4.32-3.13-6.22-3.06l-.46,0a17.89,17.89,0,0,0-1.85.18c-2,.27-4.73.63-7.37-.48a1,1,0,0,0-.94.09,9.25,9.25,0,0,0-3.7,5.78h-.22C21,12.85,21.06,9,22.39,7.57ZM18.34,22.39l-.28-3.34.47-.05h0l.31,3.35a.4.4,0,0,0-.11,0ZM21,23.8l-.61-6.38.89-.1.62,6.4Zm2.25,1.38.17-.17a2,2,0,0,0,.45-1.45l-.47-5.13c0-.72.06-1.45.09-2.12A6.91,6.91,0,0,1,26,11.55a16.16,16.16,0,0,0,7.85.41c.65-.09,1.21-.16,1.64-.18H36c1.82-.06,3.25-.12,4.39,2,1,1.9,1.64,6.42,1.81,8.89l-.08.9a1.89,1.89,0,0,0,.22,1.1l0,0a1.3,1.3,0,0,0-.1.25c-.63,2.62-4.5,4.22-6.73,4.85a2.51,2.51,0,1,0,.17,2,17.2,17.2,0,0,0,6-2.77,14.78,14.78,0,0,1-4.19,5.16,7.08,7.08,0,0,1-8.92,0,14.2,14.2,0,0,1-4.43-5.73A17.62,17.62,0,0,1,23.27,25.18ZM33.8,31a.51.51,0,1,1-.51-.51A.51.51,0,0,1,33.8,31Zm-8,6.12A45.06,45.06,0,0,0,30.13,41a14.71,14.71,0,0,0-3,3l-2.35-5.34ZM8.13,52.69a10.44,10.44,0,0,1,2.14-6,10.56,10.56,0,0,1,4.17-3.28l8.69-3.52,2.46,5.57a1.47,1.47,0,0,0,1.12,1.12,1.84,1.84,0,0,0,.33,0,1.5,1.5,0,0,0,1.29-.74,10,10,0,0,1,1-1.33l1.4,1.53L29,63H7.74ZM31,63l1.67-17.15a1,1,0,0,0-.25-.77L30.7,43.16a15.19,15.19,0,0,1,1.33-1h1.64c.26.21.68.56,1.16,1l-1.52,1.93a1,1,0,0,0-.21.72L34.83,63Zm5.8,0L35.13,46l1.09-1.38a13.45,13.45,0,0,1,1.2,1.68,1.48,1.48,0,0,0,1.29.75A1.86,1.86,0,0,0,39,47a1.47,1.47,0,0,0,1.12-1.13l2.52-6,9.17,3.68A10.08,10.08,0,0,1,58,52.21L56.26,63Z"/>
+                        </svg>
+                    </div>
+                    
+            
+                    <div class="nav-link">
+                        <a href="support.html">Support</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-advertising-section flex fl-col">
+                <div class="advertising-logo">
+                    <!--<img src="https://img.freepik.com/premium-photo/business-finance-marketing-cartoon-sticker-isolated-white-background-with-cutoff-edges-creative-concept-financial-presentations-marketing-strategies-advertising-campaigns_771426-51596.jpg" alt="Business Finance Marketing">-->
+                    <img src="images/manwithmoney.gif">
+                </div>
+                <div class="advertising-desc">
+                    <h2>Congratulations!</h2>
+                    <p>You'r eligible for instant Life cover upto 2,00,000 without any medical test for documentation
+                    </p>
+                </div>
+                <button>
+                    <a href="user.html">Login</a></button>
+                <button>
+                    <a href="register.html">Register</a>
+                </button>
+            </div>
+            
+            <div class="nav-profile flex">
+            
+                <div class="profile-text">
+                    <h3>MNSS</h3>
+                    <p>Creator</p>
+                </div>
+                <div class="profile-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path class="icon" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+
+        <header style="background-image: url(images/dashbackground.png);" class="container1">
+            <div class="main-title flex">
+                <div class="dashborad-title">
+                    <h1 class="title">Reports</h1>
+                    <p>Here is the summary of your expenses.</p>
+                </div>
+            </div>
+
+            <main class="dashboard">
+                <!-- Expense List Section -->
+                <div class="expenseSection flex">
+                    <div class="expense-list-card flex fl-col">
+                        <div class="main-title">
+                            <h2>Expense List:</h2>
+                        </div>
+                        <div class="table-container">
+                            <table id="data-table">
+                              <thead>
+                                <tr>
+                                  <th>Description</th>
+                                  <th>Balance</th>
+                                  <th>Expense</th>
+                                  <th>Date</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="expenseList"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart Section -->
+                    <div class="chartSection">
+                        <canvas id="expenseChart1"></canvas>
+                        <canvas id="expenseChart2"></canvas>
+                    </div>
+                </div>
+            </main>
+        </header>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="flex container">
+        <div class="footer-text">
+            Copyright © 2024 - All right reserved
+        </div>
+    </footer>
+
+    <!-- ion-icon File -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+@media (max-width: 980px) {
+    .container {
+        max-width: 880px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    html {
+        font-size: 57%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .budgetSection {
+        flex-direction: column;
+    }
+
+    .dashboard .total-balnace,
+    .addBudget {
+        width: 100%;
+    }
+
+    .expenseSection {
+        flex-direction: column;
+    }
+
+    .expense-list-card {
+        width: 100%;
+    }
+
+    .addExpense {
+        width: 100%;
+    }
+
+    .income-expense-cards {
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .incomeCard,
+    .expenseCard{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 50%;
+    }
+
+    ::placeholder {
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.4rem !important;
+    }
+
+    .listITems .item .list-expense-title-desc {
+        width: 70%;
+    }
+
+    .incomeCard h2 {
+        font-size: 2rem !important;
+    }
+    .expenseCard h2{
+        font-size: 2rem !important;
+    }
+
+    #delete, #edit {
+        width: 11%;
+        padding: 0px;
+        height: 30px;
+    }
+
+    .main-title h2 {
+        font-size: 2.1rem !important;
+    }
+
+    #reset {
+        width: 70px;
+        border-radius: 15px;
+    }
+}
+
+/*2*/
+
+@media(max-width: 1150px) {
+    nav {
+        width: 240px;
+        position: fixed;
+        left: -100%;
+        background-color: #e7eaf2;
+        background-image: url(./images/bg2.png);
+        background-position: center;
+        transition: 1s ease;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    .menu_btn {
+        display: block;
+
+    }
+/*new*/
+    .topbar_icon {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 12px 12px 51px #868686,
+            -28px -28px 51px #ffffff;
+    }
+/*new*/
+    #btn_close {
+        display: block;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        padding: 9px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 12px 12px 51px #868686,
+            -28px -28px 51px #ffffff;
+    }
+}
+/*
+@media(max-width:870px) {
+    .dashborad {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}*/
+
+@media(max-width:550px) {
+    h1 {
+        font-size: 28px !important;
+    }
+
+   /* .top-bar-icons {
+        margin-bottom: 30px;
+    }
+
+    .topbar_icon {
+        margin-bottom: 20px;
+    }*/
+
+    nav {
+        width: 230px;
+        padding-inline: 10px;
+    }
+
+    .nav-menu{
+        padding-inline: 15px;
+    }
+
+    .nav-advertising-section{
+        padding-inline: 10px;
+    }
+
+    /*.r_transaction,
+    .s_analysis {
+        padding: 13px;
+    }
+
+    .r_transaction::before {
+        width: 15px;
+        height: 15px;
+        top: 40px;
+    }*/
+}
+
+/*@media(max-width:420px) {
+    .dashborad-btns {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .transaction-btn,
+    .analysis-btn {
+        width: 100%;
+    }
+
+    .r_transaction,
+    .s_analysis {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transaction-detail {
+        max-width: 50%;
+    }
+}
+*/

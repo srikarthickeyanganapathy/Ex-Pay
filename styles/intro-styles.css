@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap");
+:root {
+  --primary-color: #3a3c4b;
+  --btn-radius: 2px;
+  --home-text-color-dark: #2f2e41;
+  --home-text-color-light: #9893a3;
+  --text: #717082;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-position: center;
+  background-size: cover;
+  /*background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?t=st=1721414679~exp=1721418279~hmac=4ba631132d27d6b380f6c8a41355d9ee70e00e9ea7271eadf735fe62ed68e170&w=996);
+  background-image: url(https://as1.ftcdn.net/v2/jpg/03/44/25/96/1000_F_344259654_f3WtFVrjUsqrElP1bbyvwhdvHHrfDRpi.jpg);*/
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: var(--white);
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  transition: filter 0.4s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.button:hover {
+  filter: brightness(1.3);
+}
+
+header {
+  padding: 2.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  color: var(--home-text-color-dark);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 53px;
+  text-align: center;
+  /*font-family: 'Satisfy', cursive;*/
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+.buttons > .button.contact {
+  border: 1px solid var(--primary-color);
+  border-radius: var(--btn-radius);
+  color: var(--primary-color);
+}
+
+.buttons > .button.get-started {
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  color: white;
+  margin-left: 1rem;
+}
+
+/*============= Header Content ======*/
+.header-content {
+  margin-top: 4rem;
+  padding: 0 3.125rem 0 3.125rem;
+
+  display: flex;
+}
+
+.header-content h1 {
+  max-width: 470px;
+  width: 100%;
+  color: var(--home-text-color-dark);
+  font-size: 5.1rem;
+  font-weight: bold;
+  /*font-family: "Playfair Display", serif;*/
+  font-family: 'Poppins', sans-serif;
+  line-height: 5.5rem;
+}
+
+
+
+.header-content p {
+  margin-top: 1.875rem;
+  max-width: 470px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color:black;
+  /*color: var(--home-text-color-light);*/
+}
+
+.header-content a {
+  display: inline-block;
+  margin-top: 1.875rem;
+
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  color: white;
+}
+
+/*============= Section app-preview ======*/
+section.app-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 10rem;
+  padding: 0 3.125rem 0 3.125rem;
+}
+
+
+h2.section-title {
+  font-size: 3.75rem;
+  /*font-family: "Playfair Display", serif;*/
+  font-family: 'Poppins', sans-serif;
+  max-width: 413px;
+}
+
+
+p.section-paragraph {
+  margin-top: 1.875rem;
+  max-width: 450px;
+  width: 100%;
+
+  font-family: 'Poppins', sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color:black;
+  /*color: var(--home-text-color-light);*/
+}
+
+.get-started-line {
+  position: relative;
+}
+
+.get-started-line a.get-started {
+  display: inline-block;
+  margin-top: 1.875rem;
+
+  color: var(--home-text-color-dark);
+  font-weight: 600;
+  font-size: 1.125rem;
+  position: relative;
+  z-index: 1;
+}
+
+.get-started-line .green-line {
+  position: absolute;
+  width: 100px;
+  left: 0;
+  top: 4px;
+  bottom: 0%;
+  z-index: 0;
+  border-bottom: 10px solid rgba(37, 90, 72, 0.338);
+}
+
+/*============= Section Track your spending ======*/
+.track-your-spending {
+  margin-top: 10rem;
+  padding: 0 3.125rem 0 3.125rem;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/*============= Section Get in touch with me ======*/
+.get-in-touch.container{
+  background-color: transparent;
+  width:100%;
+  
+}
+
+.get-in-touch-content {
+  background: var(--home-text-color-dark);
+  padding: 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  margin: 10rem 0;
+  /*margin-left: 0;
+  margin-right: 0;*/
+}
+
+.get-in-touch-content h2.section-title {
+  color: white;
+  max-width: 337px;
+}
+
+section.get-in-touch a.get-started {
+  display: inline-block;
+
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  color: white;
+  margin-left: 1rem;
+  padding: 1.5rem 5rem;
+}
+
+/*============= Footer ======*/
+
+footer {
+  margin-top: -320px;
+  /*background: #323030;*/
+  background: transparent;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 15rem;
+  padding-bottom: 6rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem 4rem;
+}
+
+.footer-card h3 {
+  margin-bottom: 1.125rem;
+  color:white
+ /* color: var(--home-text-color-dark);*/
+}
+
+.footer-card a {
+  text-decoration: none;
+  /*color: var(--text);*/
+  color:black;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-card a:hover {
+  color: var(--primary-color);
+}
+
+.footer-card a:last-child {
+  margin: 0;
+}
+
+.footer-card .social #git {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#insta,
+#linkedin,
+#git {
+  transition: color 0.3s ease;
+}
+
+#insta:hover,
+#linkedin:hover,
+#git:hover {
+  color: var(--primary-color);
+}
